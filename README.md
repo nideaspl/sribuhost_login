@@ -1,8 +1,10 @@
+## Configure mysql.
 ```shell
 sudo systemctl status mysql
 sudo systemctl start mysql
 sudo systemctl enable mysql
 ```
+## Create user kali and grant all privileges.
 ```
 ┌──(kali㉿kali)-[~/Desktop/login-form-php]
 └─$ mysql    
@@ -99,13 +101,15 @@ MariaDB [sribuhost_login]> SHOW DATABASES;
 ```
 
 
-# Finally host it.
+## Finally host it.
 ```shell
 cp * /var/www/html
 sudo systemctl restart apache2
 ```
-
-
+### url:
+```
+http://localhost/index.php
+```
 
 
 
