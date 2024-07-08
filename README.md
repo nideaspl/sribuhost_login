@@ -1,8 +1,9 @@
+```shell
 sudo systemctl status mysql
 sudo systemctl start mysql
 sudo systemctl enable mysql
-
-
+```
+```
 ┌──(kali㉿kali)-[~/Desktop/login-form-php]
 └─$ mysql    
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
@@ -95,13 +96,14 @@ MariaDB [sribuhost_login]> SHOW DATABASES;
 +--------------------+
 5 rows in set (0.000 sec)
 
+```
 
 
-
-
-
-
-
+# Finally host it.
+```shell
+cp * /var/www/html
+sudo systemctl restart apache2
+```
 
 
 
