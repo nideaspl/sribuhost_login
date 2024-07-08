@@ -103,17 +103,11 @@ MariaDB [sribuhost_login]> SHOW DATABASES;
 
 ## Finally host it.
 ```shell
+cd <repositiry directory>
 cp * /var/www/html
 sudo systemctl restart apache2
 ```
-### url:
+## Access local website using this URL:
 ```
 http://localhost/index.php
 ```
-
-
-
-
-
-cp * /var/www/html
-sudo systemctl restart apache2
