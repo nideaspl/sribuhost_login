@@ -4,6 +4,13 @@ sudo systemctl status mysql
 sudo systemctl start mysql
 sudo systemctl enable mysql
 ```
+## Log in as the Root User:
+```
+sudo mysql -u root -p
+CREATE DATABASE xinan;
+GRANT ALL PRIVILEGES ON xinan.* TO 'kali'@'localhost';
+FLUSH PRIVILEGES;
+```
 ## Create user kali and grant all privileges.
 ```
 ┌──(kali㉿kali)-[~/Desktop/login-form-php]
